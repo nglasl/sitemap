@@ -18,7 +18,7 @@ Features
 ============
 
 * Adds HTML and XML versions of a sitemap based on sitetree
-* Exclude any page from sitemaps with CMS chackbox (on Settings tab)
+* Exclude any page from sitemaps with CMS checkbox (on Settings tab)
 * Uses partial caching, refreshed when any page in the sitetree is updated
 * Creates/updates an actual sitemap.xml file in the root of the site on load of xml sitemap page
 
