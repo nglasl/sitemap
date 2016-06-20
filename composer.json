@@ -3,7 +3,6 @@
     "type": "silverstripe-module",
 	"description": "Sitemap generating module for SilverStripe",
 	"keywords": ["silverstripe"],
-	"license": "BSD-3-Clause",
 	"require": {
 		"silverstripe/cms": "~3.1",
 		"silverstripe/framework": "~3.1"
