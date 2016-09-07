@@ -13,7 +13,8 @@ class HTMLSitemap extends Page {
 	);
 	
 	private static $defaults = array(
-		'ShowInMenus' => 0
+		'ShowInMenus' => 0,
+		'Sort' => 10000
 	);
 
 	public function getCMSFields(){
