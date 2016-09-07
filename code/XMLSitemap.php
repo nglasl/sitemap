@@ -13,7 +13,8 @@ class XMLSitemap extends Page{
 	);
 	
 	private static $defaults = array(
-		'ShowInMenus' => 0
+		'ShowInMenus' => 0,
+		'Sort' => 10001
 	);
 
 	public function getCMSFields(){
@@ -71,11 +72,11 @@ class XMLSitemap_Controller extends Page_Controller {
 		$file = BASE_PATH . '/sitemap.xml';
 		$fp = fopen($file, "w");
 		// prepend xml tag to result (gets excluded from curl)
-		$output = '<?xml version="1.0" encoding="UTF-8"?>';
-		$output .= $xml;
+		/*$output = '<?xml version="1.0" encoding="UTF-8"?>';
+		$output .= $xml;*/
 		
 		// write xml file
-		fwrite($fp, $output);
+		fwrite($fp, $xml);
 
 
 	}
