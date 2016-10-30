@@ -1,5 +1,5 @@
 {
-	"name": "PlasticStudio/SiteMap",
+	"name": "plasticstudio/sitemap",
     "type": "silverstripe-module",
 	"description": "Sitemap generating module for SilverStripe",
 	"keywords": ["silverstripe"],
