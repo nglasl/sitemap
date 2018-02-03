@@ -1,7 +1,5 @@
 <div class="main-content sitemap">
 
-	<% cached 'sitemap', $List('SiteTree').max('LastEdited'), $List('SiteTree').count() %>
-	
 		<% if Menu(1) %>
 			<%-- level 1 --%>
 			<ul>
@@ -24,11 +22,6 @@
 		
 		<% end_if %>
 	
-	<% end_cached %>
-	
 	<div class="clear"></div>
 
 </div>
-
-
-

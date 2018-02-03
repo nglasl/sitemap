@@ -1,8 +1,11 @@
 <?php
-define('SITEMAP_BASE', basename(dirname(__FILE__)));
+//use SilverStripe\Control\HTTP;
+use SilverStripe\ORM\DataObject;
+
+define('SITEMAP_BASE', dirname(dirname(__FILE__)));
 
 // set cache lifetime to 3 hours
-SS_Cache::set_cache_lifetime('sitemap', 60*60*3);
+//HTTP::set_cache_age( 10800);
 
 // Extensions
 DataObject::add_extension('Page', 'SitemapPageExtension');
