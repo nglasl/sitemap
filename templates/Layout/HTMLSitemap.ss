@@ -4,8 +4,6 @@
 
 		<div class="inner">
 
-			<% cached 'sitemap', $List('SiteTree').max('LastEdited'), $List('SiteTree').count() %>
-			
 				<% if Menu(1) %>
 					<%-- level 1 --%>
 					<ul>
@@ -27,8 +25,6 @@
 					$Form
 				
 				<% end_if %>
-			
-			<% end_cached %>
 			
 			<div class="clear"></div>
 
