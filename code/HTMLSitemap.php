@@ -31,7 +31,7 @@ class HTMLSitemap extends Page {
 		parent::requireDefaultRecords();
 		
 		// if html sitemap page does not exist
-		if($this->class == 'HTMLSitemap' && $this->config()->create_default_pages) {
+		if(static::class == self::class && $this->config()->create_default_pages) {
 			if( !SiteTree::get_by_link('html-sitemap') ){
 				$HTMLSitemap = new HTMLSitemap();
 				$HTMLSitemap->Title = 'HTML Sitemap';
