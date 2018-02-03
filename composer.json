@@ -7,10 +7,5 @@
 		"silverstripe/cms": ">4.0",
 		"silverstripe/framework": ">4.0"
 	},
-    "extra": {
-        "installer-paths": {
-            "{$name}": ["vendor/package"]
-        }
-    },
 	"minimum-stability": "dev"
 }
