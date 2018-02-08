@@ -32,7 +32,7 @@ class XMLSitemap extends Page{
 		parent::requireDefaultRecords();
 		
 		// if xml sitemap page does not exist
-		if($this->class == 'XMLSitemap' && $this->config()->create_default_pages) {
+		if(static::class == self::class && $this->config()->create_default_pages) {
 			if( !SiteTree::get_by_link('sitemap') ){
 				$XMLSitemap = new XMLSitemap();
 				$XMLSitemap->Title = 'XML Sitemap';
