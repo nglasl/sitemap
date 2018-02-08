@@ -1,6 +1,6 @@
 {
 	"name": "plasticstudio/sitemap",
-    "type": "silverstripe-module",
+    "type": "silverstripe-vendormodule",
 	"description": "Sitemap generating module for SilverStripe",
 	"keywords": ["silverstripe"],
 	"require": {
@@ -8,9 +8,7 @@
 		"silverstripe/framework": ">4.0"
 	},
     "extra": {
-        "installer-paths": {
-            "{$name}": ["vendor/package"]
-        }
+        "installer-name": "sortablegridfield"
     },
 	"minimum-stability": "dev"
 }
