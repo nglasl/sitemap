@@ -1,21 +1,21 @@
 <?php
 
+use SilverStripe\CMS\Model\SiteTree;
+
 class HTMLSitemap extends Page {
 
 	private static $allowed_children = 'none';
 	private static $description = 'Adds an html sitemap generated from the site tree';
 	private static $icon = 'sitemap/images/sitemap.png';
 	
-	private static $db = array(
-	);
+	private static $db = [];
 
-	private static $has_one = array(
-	);
+	private static $has_one = [];
 	
-	private static $defaults = array(
+	private static $defaults = [
 		'ShowInMenus' => 0,
 		'Sort' => 10000
-	);
+	];
 
 	public function getCMSFields(){
 		$fields = parent::getCMSFields();
@@ -57,14 +57,5 @@ class HTMLSitemap extends Page {
 		}*/
 	}
 
-
-}
-
-class HTMLSitemap_Controller extends Page_Controller {
-	
-	public function init() {
-		parent::init();
-		Requirements::css(SITEMAP_BASE . '/css/sitemap.css');
-	}
 
 }

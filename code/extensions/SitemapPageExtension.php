@@ -1,13 +1,13 @@
 <?php
-  
-class SitemapPageExtension extends DataExtension {
+
+class SitemapPageExtension extends SilverStripe\ORM\DataExtension {
      
-	static $db = array(	
+	private static $db = [	
 		'ExcludeFromSitemap' => 'Boolean'
-    );
+    ];
      
-	public function updateSettingsFields(FieldList $fields) {
-		$fields->addFieldToTab("Root.Settings", new CheckBoxField('ExcludeFromSitemap', 'Exclude from sitemap?'), 'ShowInSearch');
+	public function updateSettingsFields(Silverstripe\Forms\FieldList $fields) {
+		$fields->addFieldToTab("Root.Settings", new Silverstripe\Forms\CheckBoxField('ExcludeFromSitemap', 'Exclude from sitemap?'), 'ShowInSearch');
     }
 	
 }
