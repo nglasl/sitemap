@@ -1,6 +1,7 @@
 <?php
 
 use SilverStripe\CMS\Model\SiteTree;
+use SilverStripe\ORM\DB;
 
 class HTMLSitemap extends Page {
 
