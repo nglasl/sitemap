@@ -33,7 +33,7 @@ class HTMLSitemap extends Page {
 		
 		// if html sitemap page does not exist
 		if(static::class == self::class && $this->config()->create_default_pages) {
-			if( !SiteTree::get_by_link('html-sitemap') ){
+			if( !HTMLSitemap::get()->first() ){
 				$HTMLSitemap = new HTMLSitemap();
 				$HTMLSitemap->Title = 'HTML Sitemap';
 				$HTMLSitemap->Content = '';

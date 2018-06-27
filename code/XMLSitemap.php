@@ -34,7 +34,7 @@ class XMLSitemap extends Page{
 		
 		// if xml sitemap page does not exist
 		if(static::class == self::class && $this->config()->create_default_pages) {
-			if( !SiteTree::get_by_link('sitemap') ){
+			if( !XMLSitemap::get()->first() ){
 				$XMLSitemap = new XMLSitemap();
 				$XMLSitemap->Title = 'XML Sitemap';
 				$XMLSitemap->Content = '';
